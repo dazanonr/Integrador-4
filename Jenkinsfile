@@ -4,8 +4,8 @@ pipeline {
         stage('Movie Report') {
             steps {
                 script {
-                   echo Título: Avatar, Recaudación: 0.0, Beneficios: 0.0
-Título: Avengers: Endgame, Recaudación: 0.0, Beneficios: 0.0
+                   echo Titulo: Avatar, Recaudacion: 0.0, Beneficios: 0.0
+Titulo: Avengers: Endgame, Recaudacion: 0.0, Beneficios: 0.0
 }
                 }
             }
