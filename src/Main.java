@@ -19,7 +19,7 @@ public class Main {
         String report = "";
         while (iterator.hasNext()) {
             actual = iterator.next();
-            report += "Título: "+ actual.getTitle()+ "Recaudación: " + actual.getEarningsProjection()
+            report += "Título: "+ actual.getTitle()+ ", Recaudación: " + actual.getEarningsProjection()
                     + ", Beneficios: " + actual.getEarningsProjection() + "\n";
         }
 
@@ -29,13 +29,13 @@ public class Main {
                 "        stage('Movie Report') {\n" +
                 "            steps {\n" +
                 "                script {\n" +
-                "                    echo \""+report+"\"\n" +
+                "                   echo "+report +"}\n" +
                 "                }\n" +
                 "            }\n" +
                 "        }\n" +
                 "    }\n" +
                 "}\n";
-        File file = new File("C:\\Users\\dazanonr\\Documents\\IntelliJ Projects\\Ejercicios Java Indra\\Ejercicio Jenkins 4\\Jenkinsfile");
+        File file = new File("C:\\Users\\dazanonr\\Documents\\IntelliJ Projects\\Ejercicios Java Indra\\Integrador 4\\Jenkinsfile");
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file));
         bufferedWriter.write(jenkinsfile);
         bufferedWriter.close();
