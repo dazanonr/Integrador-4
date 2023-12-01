@@ -29,7 +29,7 @@ public class Main {
                 "        stage('Movie Report') {\n" +
                 "            steps {\n" +
                 "                script {\n" +
-                "                   echo "+report +"}\n" +
+                "                   echo "+report +"\n}" +
                 "                }\n" +
                 "            }\n" +
                 "        }\n" +
