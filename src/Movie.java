@@ -13,7 +13,7 @@ public class Movie {
         this.calculateProjection();
     }
     public void calculateProjection(){
-        this.setEarningsProjection((this.getEarningsProjection()/this.getSpectators())/2);
+        this.setEarningsProjection((this.getEarnings()/this.getSpectators())/2);
         this.setProfitProjection(this.getEarningsProjection()*0.8);
     }
     public String getTitle() {
