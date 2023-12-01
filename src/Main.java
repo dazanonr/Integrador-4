@@ -27,8 +27,8 @@ public class Main {
         String report = "";
         while (iterator.hasNext()) {
             actual = iterator.next();
-            report += "Titulo "+ actual.getTitle()+ " Recaudacion " + actual.getEarningsProjection()
-                    + " Beneficios " + actual.getProfitProjection() + " ";
+            report += "echo Titulo "+ actual.getTitle()+ " Recaudacion " + actual.getEarningsProjection()
+                    + " Beneficios " + actual.getProfitProjection();
         }
 
         String jenkinsfile = "pipeline {\n" +
