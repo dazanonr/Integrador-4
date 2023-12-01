@@ -27,7 +27,7 @@ public class Main {
         String report = "";
         while (iterator.hasNext()) {
             actual = iterator.next();
-            report += "echo Titulo "+ actual.getTitle()+ " Recaudacion " + actual.getEarningsProjection()
+            report += "Titulo "+ actual.getTitle()+ " Recaudacion " + actual.getEarningsProjection()
                     + " Beneficios " + actual.getProfitProjection();
         }
 
