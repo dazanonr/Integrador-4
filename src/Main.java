@@ -26,10 +26,10 @@ public class Main {
         String jenkinsfile = "pipeline {\n" +
                 "    agent any\n" +
                 "    stages {\n" +
-                "        stage('Movie Report') {\n" +
+                "        stage('Ejemplo') {\n" +
                 "            steps {\n" +
                 "                script {\n" +
-                "                   echo "+report +"\n}" +
+                "                    echo \""+report+"\"\n" +
                 "                }\n" +
                 "            }\n" +
                 "        }\n" +
