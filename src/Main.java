@@ -11,7 +11,7 @@ public class Main {
         ArrayList<Movie> blockbusters = new ArrayList<>();
 
         blockbusters.add(new Movie("Avatar",100000,10000,1000000000));
-        blockbusters.add(new Movie("Avengers: Endgame",90000,9000,810000000));
+        blockbusters.add(new Movie("Avengers Endgame",90000,9000,810000000));
 
 
         Iterator<Movie> iterator = blockbusters.iterator();
@@ -19,8 +19,8 @@ public class Main {
         String report = "";
         while (iterator.hasNext()) {
             actual = iterator.next();
-            report += "Titulo: "+ actual.getTitle()+ ", Recaudacion: " + actual.getEarningsProjection()
-                    + ", Beneficios: " + actual.getEarningsProjection();
+            report += "Titulo "+ actual.getTitle()+ ", Recaudacion " + actual.getEarningsProjection()
+                    + ", Beneficios " + actual.getEarningsProjection() + "\n";
         }
 
         String jenkinsfile = "pipeline {\n" +
